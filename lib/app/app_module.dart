@@ -6,6 +6,8 @@ import 'package:uAuth2/app/modules/home/home_module.dart';
 import 'package:uAuth2/app/shared/repositories/poke_repository.dart';
 import 'package:uAuth2/app/shared/utils/constants.dart';
 
+import 'modules/other/other_module.dart';
+
 class AppModule extends MainModule {
   @override
   List<Bind> get binds => [
@@ -16,6 +18,7 @@ class AppModule extends MainModule {
   @override
   List<Router> get routers => [
         Router(Modular.initialRoute, module: HomeModule()),
+        Router('/other', module: OtherModule()),
       ];
 
   @override

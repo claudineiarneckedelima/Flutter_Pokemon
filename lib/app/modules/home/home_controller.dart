@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
 import 'package:uAuth2/app/shared/models/pokemon_model.dart';
 import 'package:uAuth2/app/shared/repositories/poke_repository.dart';
@@ -12,12 +13,12 @@ abstract class _HomeControllerBase with Store {
   @observable
   ObservableFuture<List<PokemonModel>> pokemons;
 
-  _HomeControllerBase(this.repository) {
-    fetchPokemons();
+  _HomeControllerBase({@required this.repository}) {
+    fetchAllPokemon();
   }
 
   @action
-  fetchPokemons() {
-    pokemons = repository.getAllPokemons().asObservable();
+  fetchAllPokemon() {
+    pokemons = repository.getAllPokemon().asObservable();
   }
 }
