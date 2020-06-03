@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
-import 'package:uAuth2/app/shared/models/pokemon_model.dart';
-import 'package:uAuth2/app/shared/repositories/poke_repository.dart';
+import 'package:flutterPokemon/app/shared/models/pokemon_model.dart';
+import 'package:flutterPokemon/app/shared/repositories/poke_repository.dart';
 
 part 'other_controller.g.dart';
 

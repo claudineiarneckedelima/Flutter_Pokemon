@@ -1,4 +1,4 @@
-package com.example.uAuth2
+package com.example.flutterPokemon
 
 import io.flutter.embedding.android.FlutterActivity
 

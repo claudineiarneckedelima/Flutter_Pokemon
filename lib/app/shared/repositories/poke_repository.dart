@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:uAuth2/app/shared/models/pokemon_model.dart';
+import 'package:flutterPokemon/app/shared/models/pokemon_model.dart';
 
 class PokeRepository {
   final Dio dio;

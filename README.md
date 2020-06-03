@@ -1,4 +1,4 @@
-# uAuth2
+# flutterPokemon
 
 A new Flutter project.
 

@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
-import 'package:uAuth2/app/app_widget.dart';
-import 'package:uAuth2/app/modules/home/home_module.dart';
-import 'package:uAuth2/app/shared/repositories/poke_repository.dart';
-import 'package:uAuth2/app/shared/utils/constants.dart';
+import 'package:flutterPokemon/app/app_widget.dart';
+import 'package:flutterPokemon/app/modules/home/home_module.dart';
+import 'package:flutterPokemon/app/shared/repositories/poke_repository.dart';
+import 'package:flutterPokemon/app/shared/utils/constants.dart';
 
 import 'modules/other/other_module.dart';
 

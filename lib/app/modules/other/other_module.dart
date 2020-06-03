@@ -1,6 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:uAuth2/app/shared/models/pokemon_model.dart';
-import 'package:uAuth2/app/shared/repositories/poke_repository.dart';
+import 'package:flutterPokemon/app/shared/models/pokemon_model.dart';
+import 'package:flutterPokemon/app/shared/repositories/poke_repository.dart';
 import 'other_controller.dart';
 import 'other_page.dart';
 
