@@ -1,13 +1,16 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutterPokemon/app/shared/models/pokemon_model.dart';
-import 'package:flutterPokemon/app/shared/repositories/poke_repository.dart';
+import 'repositories/poke_repository.dart';
 import 'other_controller.dart';
 import 'other_page.dart';
+import 'package:dio/dio.dart';
+import 'package:flutterPokemon/app/shared/utils/constants.dart';
 
 class OtherModule extends ChildModule {
   @override
   List<Bind> get binds => [
         Bind((i) => OtherController(repository: i.get<PokeRepository>())),
+        Bind((i) => PokeRepository(dio: i.get<Dio>())),
+        Bind((i) => Dio(BaseOptions(baseUrl: URL_BASE))),
       ];
 
   // @override

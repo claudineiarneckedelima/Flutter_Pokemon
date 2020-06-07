@@ -8,4 +8,40 @@ part of 'other_controller.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$OtherController on _OtherControllerBase, Store {}
+mixin _$OtherController on _OtherControllerBase, Store {
+  final _$pokemonsAtom = Atom(name: '_OtherControllerBase.pokemons');
+
+  @override
+  ObservableFuture<List<PokemonModel>> get pokemons {
+    _$pokemonsAtom.reportRead();
+    return super.pokemons;
+  }
+
+  @override
+  set pokemons(ObservableFuture<List<PokemonModel>> value) {
+    _$pokemonsAtom.reportWrite(value, super.pokemons, () {
+      super.pokemons = value;
+    });
+  }
+
+  final _$_OtherControllerBaseActionController =
+      ActionController(name: '_OtherControllerBase');
+
+  @override
+  dynamic fetchAbility() {
+    final _$actionInfo = _$_OtherControllerBaseActionController.startAction(
+        name: '_OtherControllerBase.fetchAbility');
+    try {
+      return super.fetchAbility();
+    } finally {
+      _$_OtherControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  String toString() {
+    return '''
+pokemons: ${pokemons}
+    ''';
+  }
+}

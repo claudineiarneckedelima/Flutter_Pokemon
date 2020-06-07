@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
-import 'package:flutterPokemon/app/shared/models/pokemon_model.dart';
-import 'package:flutterPokemon/app/shared/repositories/poke_repository.dart';
+import 'models/pokemon_model.dart';
+import 'repositories/poke_repository.dart';
 
 part 'home_controller.g.dart';
 
