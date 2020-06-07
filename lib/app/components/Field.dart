@@ -15,13 +15,16 @@ Widget TextInputField({
   onChanged,
   String Function() errorText,
 }) =>
-    TextField(
-      onChanged: onChanged,
-      decoration: InputDecoration(
-        border: OutlineInputBorder(),
-        labelText: labelText,
-        icon: Icon(icon) ?? null,
-        errorText: _textValidator(errorText(), labelText, isRequired),
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: TextField(
+        onChanged: onChanged,
+        decoration: InputDecoration(
+          border: OutlineInputBorder(),
+          labelText: labelText,
+          icon: Icon(icon) ?? null,
+          errorText: _textValidator(errorText(), labelText, isRequired),
+        ),
       ),
     );
 
